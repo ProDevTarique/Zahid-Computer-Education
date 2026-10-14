@@ -342,7 +342,7 @@ a { color: inherit; }
 .btn-outline { border-color: #cbb77f; color: #182a45; }
 .section-pad { padding: 92px 0; }
 .card { background: #fffdf8; border: 1px solid #e6dfce; box-shadow: 0 14px 40px rgba(34, 40, 52, .045); }
-.photo { display: block; width: 100%; object-fit: cover; }
+.photo { display: block; width: 100%; object-fit: cover; padding: 4px; border: 1px solid #c9b370; border-radius: 2px; background: #fffdf8; box-shadow: 0 8px 20px rgba(24, 42, 69, .12); }
 .site-header { position: sticky; top: 0; z-index: 40; background: rgba(250,248,241,.96); backdrop-filter: blur(12px); border-bottom: 1px solid #e7e0d2; }
 .nav-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
@@ -364,7 +364,7 @@ a { color: inherit; }
 .hero p { color:#d8deea; font-size:1.1rem; line-height:1.7; max-width:500px; }
 .hero p.hero-fee { color:#f0d78d; font-size:.92rem; font-weight:700; margin-top:-6px; }
 .hero-photo-wrap { position:relative; min-height:430px; }
-.hero-photo { position:absolute; inset:0 0 0 20px; height:100%; object-position:center; filter:brightness(1.36) contrast(1.04) saturate(.92); border:8px solid rgba(255,255,255,.09); }
+.hero-photo { position:absolute; inset:0 0 0 20px; height:100%; object-position:center; filter:brightness(1.36) contrast(1.04) saturate(.92); padding:0; border:5px solid rgba(255,255,255,.88); box-shadow:0 10px 28px rgba(0,0,0,.2); }
 .hero-photo-wrap:after { content:""; position:absolute; inset:22px -15px -15px 45px; border:1px solid #d5ac53; pointer-events:none; }
 .hero-stamp { position:absolute; bottom:22px; left:0; background:#d5ac53; color:#182a45; padding:18px 22px; font-size:.83rem; font-weight:700; z-index:2; }
 .stats { display:grid; grid-template-columns:repeat(4,1fr); border-bottom:1px solid #e6dfce; }
@@ -440,7 +440,7 @@ a { color: inherit; }
 .gallery-caption { padding:13px 15px; color:#fffaf0; font-size:.85rem; }
 .lightbox { position:fixed; inset:0; z-index:80; background:rgba(13,22,37,.96); display:grid; place-items:center; padding:30px; }
 .lightbox figure { margin:0; max-width:min(1050px,90vw); }
-.lightbox img { max-height:78vh; max-width:100%; object-fit:contain; }
+.lightbox img { max-height:78vh; max-width:100%; object-fit:contain; padding:5px; border:1px solid #d5ac53; background:#fffdf8; box-shadow:0 12px 35px rgba(0,0,0,.35); }
 .lightbox figcaption { color:white; margin-top:12px; text-align:center; }
 .lightbox-controls { position:fixed; top:20px; right:25px; display:flex; gap:10px; }
 .lightbox-controls button { background:transparent; color:white; border:1px solid #8790a0; padding:11px; cursor:pointer; }
@@ -466,7 +466,11 @@ a { color: inherit; }
 .site-footer a { text-decoration:none; }
 .footer-links { display:grid; gap:9px; }
 .footer-bottom { border-top:1px solid rgba(255,255,255,.15); margin-top:40px; padding-top:18px; display:flex; justify-content:space-between; gap:20px; color:#aeb7c4; font-size:.8rem; }
-.whatsapp-float { position:fixed; right:22px; bottom:22px; z-index:35; display:flex; align-items:center; gap:10px; background:#1f644b; color:white; padding:14px 17px; border-radius:40px; text-decoration:none; font-weight:700; box-shadow:0 8px 24px #111f3440; }
+.whatsapp-float { position:fixed; right:22px; bottom:22px; z-index:35; display:flex; align-items:center; gap:9px; background:#07985b; color:#fff; padding:10px 20px 10px 15px; border:2px solid rgba(255,255,255,.96); outline:1px solid #075b3b; border-radius:40px; text-decoration:none; font-size:1rem; font-weight:700; box-shadow:0 8px 24px #111f3450; transition:background .2s, transform .2s; }
+.whatsapp-float:hover { background:#087c4b; transform:translateY(-2px); }
+.whatsapp-float-icon { width:27px; height:27px; flex:0 0 auto; }
+.whatsapp-inline-icon { width:1.2em; height:1.2em; flex:0 0 auto; vertical-align:-.2em; }
+.whatsapp-text-link { display:inline-flex; align-items:center; gap:5px; }
 .not-found { min-height:70vh; display:grid; place-items:center; text-align:center; padding:50px 20px; }
 .not-found h1 { font:700 clamp(3rem,8vw,6rem) 'Playfair Display'; color:#182a45; margin:0; }
 .focus-visible:focus, a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline:3px solid #d5ac53; outline-offset:3px; }
@@ -506,7 +510,7 @@ a { color: inherit; }
  .footer-bottom { flex-direction:column; }
  .about-facts { grid-template-columns:1fr; }
  .form-card { padding:22px; }
- .whatsapp-float { right:14px; bottom:14px; padding:12px 15px; }
+ .whatsapp-float { right:14px; bottom:14px; padding:9px 16px 9px 12px; }
 }
 @media(max-width:360px) {
  .brand { gap:8px; }

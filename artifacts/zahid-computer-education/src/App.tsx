@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, type FormEvent } from 'react';
 import { Link, Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import { ArrowDownRight, ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Clock3, MapPin, Menu, Phone, X } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import heroLab from '@assets/WhatsApp_Image_2026-10-14_at_4.07.43_PM_1791984016031.jpeg';
 import labSecond from '@assets/WhatsApp_Image_2026-10-14_at_4.08.22_PM_1791984016033.jpeg';
 import eventPhotoOne from '@assets/WhatsApp_Image_2026-10-14_at_4.08.24_PM_(1)_1791984016033.jpeg';
@@ -100,7 +101,7 @@ function Footer() {
       <div className="footer-grid">
         <div><Link href="/" className="brand"><span className="brand-mark">Z</span><span><span className="brand-title" style={{ color: '#fffaf0' }}>Zahid Computer Education</span><span className="brand-sub" style={{ color: '#d0b76c' }}>Affiliated with Drishti Computer Education</span></span></Link><p>Practical computer learning, close to home in Gausnagar, Runnisaidpur.</p></div>
         <div><h3>Explore</h3><div className="footer-links">{navItems.slice(1).map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}</div></div>
-        <div><h3>Visit or get in touch</h3><p>{ADDRESS}</p><div className="footer-links"><a href="tel:+919852556719">Call {PHONE}</a><a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noopener noreferrer">WhatsApp</a><a href={`mailto:${EMAIL}`}>{EMAIL}</a><a href={MAPS} target="_blank" rel="noreferrer">Directions on Google Maps</a></div></div>
+        <div><h3>Visit or get in touch</h3><p>{ADDRESS}</p><div className="footer-links"><a href="tel:+919852556719">Call {PHONE}</a><a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noopener noreferrer"><FaWhatsapp className="whatsapp-inline-icon" aria-hidden="true" /> WhatsApp</a><a href={`mailto:${EMAIL}`}>{EMAIL}</a><a href={MAPS} target="_blank" rel="noreferrer">Directions on Google Maps</a></div></div>
       </div>
       <div className="footer-bottom"><span>© {new Date().getFullYear()} Zahid Computer Education</span><span>Director: Md. Zahid</span></div>
     </div>
@@ -109,7 +110,7 @@ function Footer() {
 
 function WhatsAppFloat() {
   const href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hello, I would like to enquire about courses at Zahid Computer Education.')}`;
-  return <a className="whatsapp-float" href={href} target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp to enquire"><span aria-hidden="true">WA</span><span>WhatsApp</span></a>;
+  return <a className="whatsapp-float" href={href} target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp to enquire"><FaWhatsapp className="whatsapp-float-icon" aria-hidden="true" /><span>WhatsApp</span></a>;
 }
 
 function CourseCards({ compact = false }: { compact?: boolean }) {
@@ -132,7 +133,7 @@ function Home() {
             <p>Practical Computer Training at Affordable Fees in Runnisaidpur, Sitamarhi.</p>
             <p className="hero-fee">₹500 per month · One-Time Registration Fee: ₹200</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 29 }}>
-              <a href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hello Zahid Computer Education, I would like to enquire about courses.')}`} className="btn btn-gold" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <ArrowUpRight size={17} /></a>
+              <a href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hello Zahid Computer Education, I would like to enquire about courses.')}`} className="btn btn-gold" target="_blank" rel="noopener noreferrer"><FaWhatsapp className="whatsapp-inline-icon" aria-hidden="true" /> Enquire on WhatsApp</a>
               <Link href="/courses" className="btn" style={{ color: '#fffaf0', borderColor: '#738095' }}>Explore courses <ArrowDownRight size={17} /></Link>
             </div>
             <p style={{ fontSize: '.82rem', marginTop: 19 }}>Affiliated with Drishti Computer Education</p>
@@ -168,7 +169,7 @@ function Home() {
         </div>
       </section>
       <section className="director"><div className="container-site director-quote"><span className="eyebrow">A note from the director</span><blockquote>“At Zahid Computer Education, our aim is to make practical computer learning approachable and affordable for our local community.”</blockquote><span className="pending">Awaiting director approval</span><p style={{ marginBottom: 0, color: '#576071', fontWeight: 700 }}>Md. Zahid · Director</p></div></section>
-      <section className="cta-band"><div className="container-site cta-row"><div className="cta-copy"><h2>Ready to Start Your Computer Learning Journey?</h2><p>Choose your course and enquire about admission today.</p></div><div className="cta-actions"><a href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hello Zahid Computer Education, I would like to enquire about admission.')}`} className="btn btn-gold" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp <ArrowUpRight size={17} /></a><a href="tel:+919852556719" className="btn btn-light-outline">Call Now <Phone size={17} /></a></div></div></section>
+      <section className="cta-band"><div className="container-site cta-row"><div className="cta-copy"><h2>Ready to Start Your Computer Learning Journey?</h2><p>Choose your course and enquire about admission today.</p></div><div className="cta-actions"><a href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hello Zahid Computer Education, I would like to enquire about admission.')}`} className="btn btn-gold" target="_blank" rel="noopener noreferrer"><FaWhatsapp className="whatsapp-inline-icon" aria-hidden="true" /> Enquire on WhatsApp</a><a href="tel:+919852556719" className="btn btn-light-outline">Call Now <Phone size={17} /></a></div></div></section>
     </main>
   </>;
 }
@@ -270,8 +271,8 @@ function AdmissionForm() {
     <div className="field"><label htmlFor="message">Message <span style={{ fontWeight: 400 }}>(optional)</span></label><textarea id="message" name="message" maxLength={700} placeholder="Anything you'd like to ask?" /></div>
     {errors && <p role="alert" style={{ color: '#a43c35' }}>{errors}</p>}
     {status && <p className="form-status" role="status">{status}</p>}
-    <button className="btn btn-navy" type="submit" style={{ marginTop: 21, width: '100%' }}>Continue to WhatsApp <ArrowUpRight size={16} /></button>
-    <p className="form-note" style={{ margin: '14px 0 0' }}>If WhatsApp does not open, <a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noreferrer">open a WhatsApp chat directly</a>.</p>
+    <button className="btn btn-navy" type="submit" style={{ marginTop: 21, width: '100%' }}><FaWhatsapp className="whatsapp-inline-icon" aria-hidden="true" /> Continue to WhatsApp</button>
+    <p className="form-note" style={{ margin: '14px 0 0' }}>If WhatsApp does not open, <a className="whatsapp-text-link" href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noreferrer"><FaWhatsapp className="whatsapp-inline-icon" aria-hidden="true" /> open a WhatsApp chat directly</a>.</p>
   </form>;
 }
 
@@ -288,7 +289,7 @@ function Contact() {
   return <><Seo path="/contact" /><main><PageHero kicker="Find us in Gausnagar" title="Contact Zahid Computer Education" desc="Talk to the institute about the courses, fees or a visit to Zahid Market." />
     <section className="section-pad container-site admission-grid">
       <div className="contact-card card"><span className="eyebrow">Direct contact</span><h2 className="serif" style={{ fontSize: '2rem', color: '#182a45' }}>We’re easy to reach.</h2>
-        <div className="contact-line"><span className="contact-icon"><Phone size={19} /></span><div><strong>Phone / WhatsApp</strong><a href="tel:+919852556719">{PHONE}</a><br /><a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noreferrer">Open WhatsApp chat</a></div></div>
+        <div className="contact-line"><span className="contact-icon"><Phone size={19} /></span><div><strong>Phone / WhatsApp</strong><a href="tel:+919852556719">{PHONE}</a><br /><a className="whatsapp-text-link" href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noreferrer"><FaWhatsapp className="whatsapp-inline-icon" aria-hidden="true" /> Open WhatsApp chat</a></div></div>
         <div className="contact-line"><span className="contact-icon">@</span><div><strong>Email</strong><a href={`mailto:${EMAIL}`}>{EMAIL}</a></div></div>
         <div className="contact-line"><span className="contact-icon"><MapPin size={19} /></span><div><strong>Address</strong><a href={MAPS} target="_blank" rel="noreferrer">{ADDRESS}</a></div></div>
         <div className="contact-line"><span className="contact-icon"><BookOpen size={19} /></span><div><strong>Director</strong><span>Md. Zahid</span></div></div>
