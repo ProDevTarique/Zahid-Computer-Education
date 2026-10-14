@@ -117,6 +117,21 @@ function WhatsAppFloat() {
   return <a className="whatsapp-float" href={href} target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp to enquire"><FaWhatsapp className="whatsapp-float-icon" aria-hidden="true" /><span>WhatsApp</span></a>;
 }
 
+function DirectorMessageSection() {
+  return <section className="director">
+    <div className="container-site director-message-layout">
+      <figure className="director-portrait">
+        <img className="photo director-portrait-image" src="/images/director-md-zahid.webp" width="1000" height="750" alt="Portrait of Md. Zahid, Director of Zahid Computer Education" loading="eager" decoding="async" />
+        <figcaption><strong>Md. Zahid</strong><span>Director · Zahid Computer Education</span></figcaption>
+      </figure>
+      <div className="director-quote">
+        <span className="eyebrow">A message from the director</span>
+        <blockquote>“{DIRECTOR_MESSAGE}”</blockquote>
+      </div>
+    </div>
+  </section>;
+}
+
 function CourseCards({ compact = false }: { compact?: boolean }) {
   return <div className="course-grid">{courses.map((course) => <article className="course-card card" key={course.code}>
     <span className="course-code">{course.code}</span><h3>{course.title}</h3><p>{course.desc}</p>
@@ -172,7 +187,7 @@ function Home() {
           {[gallery[0], gallery[2], gallery[4]].map((photo) => <Link key={photo.label} href="/gallery" aria-label={`View gallery: ${photo.label}`}><img src={photo.src} className="photo" width={photo.width} height={photo.height} alt={photo.label} loading="lazy" /></Link>)}
         </div>
       </section>
-      <section className="director"><div className="container-site director-quote"><span className="eyebrow">A message from the director</span><blockquote>“{DIRECTOR_MESSAGE}”</blockquote><p style={{ marginBottom: 0, color: '#576071', fontWeight: 700 }}>Md. Zahid · Director</p></div></section>
+      <DirectorMessageSection />
       <section className="cta-band"><div className="container-site cta-row"><div className="cta-copy"><h2>Ready to Start Your Computer Learning Journey?</h2><p>Choose your course and enquire about admission today.</p></div><div className="cta-actions"><a href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hello Zahid Computer Education, I would like to enquire about admission.')}`} className="btn btn-gold" target="_blank" rel="noopener noreferrer"><FaWhatsapp className="whatsapp-inline-icon" aria-hidden="true" /> Enquire on WhatsApp</a><a href="tel:+919852556719" className="btn btn-light-outline">Call Now <Phone size={17} /></a></div></div></section>
     </main>
   </>;
@@ -191,7 +206,7 @@ function About() {
       </div>
     </section>
     <section className="section-pad" style={{ background: '#efecdf' }}><div className="container-site split"><img className="photo" src={exteriorThree} width="1024" height="576" alt="Building and street frontage around Zahid Market in Gausnagar" loading="lazy" /><div className="split-copy"><span className="eyebrow">Learning with clarity</span><h2>A simple, practical approach</h2><p>We want learners to have clear information before they begin: a course to explore, a duration to discuss, and a fee structure they can understand.</p><p>Course descriptions on this site are general introductions. Any detailed syllabus topics are provisional and should be confirmed with the institute.</p></div></div></section>
-    <section className="director"><div className="container-site director-quote"><span className="eyebrow">A message from the director</span><blockquote>“{DIRECTOR_MESSAGE}”</blockquote><p style={{ color: '#576071', fontWeight: 700 }}>Md. Zahid · Director</p></div></section>
+    <DirectorMessageSection />
     <section className="cta-band"><div className="container-site cta-row"><h2>Come by Zahid Market or send a course enquiry.</h2><Link className="btn btn-navy" href="/contact">Contact the institute <ArrowRight size={16} /></Link></div></section>
   </main></>;
 }

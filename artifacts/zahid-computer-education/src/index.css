@@ -403,8 +403,14 @@ a { color: inherit; }
 .photo-preview img:first-child { grid-row:span 2; height:432px; }
 .photo-preview img { height:210px; cursor:pointer; }
 .director { background:#eee8da; padding:62px 0; }
-.director-quote { max-width:830px; margin:auto; text-align:center; }
-.director-quote blockquote { font:600 clamp(1.5rem,3vw,2.2rem)/1.45 'Playfair Display'; color:#182a45; margin:18px 0 25px; }
+.director-message-layout { max-width:1060px; display:grid; grid-template-columns:minmax(250px,360px) minmax(0,1fr); align-items:center; gap:clamp(30px,6vw,78px); }
+.director-portrait { width:100%; max-width:380px; margin:0; justify-self:center; }
+.director-portrait-image { aspect-ratio:4/3; height:auto; object-fit:cover; object-position:center 36%; }
+.director-portrait figcaption { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-top:12px; padding:13px 7px 3px; border-top:1px solid #c9b370; color:#182a45; }
+.director-portrait figcaption strong { font:700 1rem 'Manrope'; }
+.director-portrait figcaption span { color:#756b57; font-size:.8rem; text-align:right; }
+.director-quote { max-width:640px; margin:0; text-align:left; }
+.director-quote blockquote { font:600 clamp(1.5rem,3vw,2.2rem)/1.45 'Playfair Display'; color:#182a45; margin:18px 0 0; }
 .pending { display:inline-block; border:1px solid #b38b3a; padding:8px 12px; font-size:.72rem; text-transform:uppercase; letter-spacing:.12em; color:#87651f; font-weight:700; }
 .cta-band { padding:62px 0; background:#182a45; color:#fffaf0; }
 .cta-row { display:flex; justify-content:space-between; align-items:center; gap:28px; }
@@ -498,6 +504,9 @@ a { color: inherit; }
  .section-heading { gap:12px; }
  .course-grid,.course-list { grid-template-columns:1fr; }
  .split { gap:30px; }
+  .director-message-layout { grid-template-columns:minmax(0,1fr); gap:27px; max-width:540px; }
+  .director-portrait { max-width:380px; }
+  .director-quote { text-align:center; }
  .split img { height:300px; }
  .values-grid { grid-template-columns:1fr; }
  .photo-preview { grid-template-columns:1fr 1fr; grid-template-rows:210px 165px; }
