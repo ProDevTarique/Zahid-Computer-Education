@@ -105,7 +105,7 @@ function Footer() {
       <div className="footer-grid">
         <div><Link href="/" className="brand"><span className="brand-mark">Z</span><span><span className="brand-title" style={{ color: '#fffaf0' }}>Zahid Computer Education</span><span className="brand-sub" style={{ color: '#d0b76c' }}>Affiliated with Drishti Computer Education</span></span></Link><p>Practical computer learning, close to home in Gausnagar, Runnisaidpur.</p></div>
         <div><h3>Explore</h3><div className="footer-links">{navItems.slice(1).map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}</div></div>
-        <div><h3>Visit or get in touch</h3><p>{ADDRESS}</p><div className="footer-links"><a href="tel:+919852556719">Call {PHONE}</a><a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noopener noreferrer"><FaWhatsapp className="whatsapp-inline-icon" aria-hidden="true" /> WhatsApp</a><a href={`mailto:${EMAIL}`}>{EMAIL}</a><a href={MAPS} target="_blank" rel="noreferrer">Directions on Google Maps</a></div></div>
+        <div><h3>Visit or get in touch</h3><p>{ADDRESS}</p><div className="footer-links"><a href="tel:+919852556719">Call {PHONE}</a><a href={`mailto:${EMAIL}`}>{EMAIL}</a><a href={MAPS} target="_blank" rel="noreferrer">Directions on Google Maps</a></div></div>
       </div>
       <div className="footer-bottom"><span>© {new Date().getFullYear()} Zahid Computer Education</span><span>Director: Md. Zahid</span></div>
     </div>
