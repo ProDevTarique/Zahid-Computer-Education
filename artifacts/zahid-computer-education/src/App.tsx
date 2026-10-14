@@ -16,6 +16,7 @@ const EMAIL = 'mdzahid6@gmail.com';
 const ADDRESS = 'Zahid Market, Gausnagar, Runnisaidpur, Sitamarhi, Bihar 843117, India';
 const MAPS = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS)}`;
 const navItems = [['Home', '/'], ['About', '/about'], ['Courses', '/courses'], ['Gallery', '/gallery'], ['Admissions', '/admissions'], ['Contact', '/contact']] as const;
+const DIRECTOR_MESSAGE = 'At Zahid Computer Education, our aim is to make practical computer learning approachable and affordable for our local community.';
 const courses = [
   { code: 'ADCA', title: 'Advanced Diploma in Computer Applications', duration: '12 months', total: '₹6,200', desc: 'A longer-format route for learners seeking a broad foundation in computer applications and office productivity.', topics: ['Computer fundamentals', 'Office productivity tools', 'Internet and file management'] },
   { code: 'DCA', title: 'Diploma in Computer Applications', duration: '6 months', total: '₹3,200', desc: 'A focused diploma course for building familiarity with everyday computer use and common applications.', topics: ['Computer and operating-system basics', 'Files and folders', 'Common office applications'] },
@@ -33,13 +34,13 @@ const gallery = [
   { src: exteriorThree, category: 'Exterior', label: 'Wider exterior view of the building and market frontage', width: 1024, height: 576 },
 ];
 const pageMeta: Record<string, { title: string; description: string }> = {
-  '/': { title: 'Zahid Computer Education | Practical Computer Courses', description: 'Explore affordable, practical computer training in Gausnagar, Runnisaidpur, Sitamarhi. Five courses, clear fees and local admission enquiries.' },
-  '/about': { title: 'About Zahid Computer Education | Gausnagar', description: 'Meet Zahid Computer Education in Gausnagar, Runnisaidpur: a neighborhood institute focused on practical, affordable computer learning.' },
-  '/courses': { title: 'Computer Courses & Fees | Zahid Computer Education', description: 'Compare ADCA, DCA, Tally, Typing and Basic Computer course durations and transparent fee breakdowns at Zahid Computer Education.' },
-  '/gallery': { title: 'Institute Gallery | Zahid Computer Education', description: 'See authentic photographs of the Zahid Computer Education computer lab, classroom gatherings and Gausnagar location.' },
-  '/admissions': { title: 'Admissions | Zahid Computer Education, Sitamarhi', description: 'Ask about computer course admission at Zahid Computer Education. Share your details to prepare a WhatsApp enquiry for review.' },
-  '/contact': { title: 'Contact & Directions | Zahid Computer Education', description: 'Contact Zahid Computer Education by phone, email or WhatsApp, or get directions to Zahid Market, Gausnagar, Runnisaidpur.' },
-  '/404': { title: 'Page not found | Zahid Computer Education', description: 'The page you are looking for could not be found. Return to Zahid Computer Education.' },
+  '/': { title: 'Zahid Computer Education | Practical Computer Courses', description: 'Find practical, affordable computer training in Gausnagar, Runnisaidpur, Sitamarhi. Compare five courses, durations and clear fees, then enquire on WhatsApp.' },
+  '/about': { title: 'About Zahid Computer Education | Sitamarhi Bihar', description: 'Meet Zahid Computer Education in Gausnagar, Runnisaidpur, Sitamarhi. Learn about the institute, Md. Zahid and its practical computer course options and fees.' },
+  '/courses': { title: 'Computer Courses & Fees | Zahid Computer Education', description: 'Compare ADCA, DCA, Tally, Typing and Basic Computer courses at Zahid Computer Education. See durations, the ₹500 monthly fee and one-time registration charge.' },
+  '/gallery': { title: 'Photo Gallery | Zahid Computer Education, Sitamarhi', description: 'View authentic photos of the Zahid Computer Education lab, classroom gatherings and location at Zahid Market, Gausnagar, Runnisaidpur, Sitamarhi, Bihar.' },
+  '/admissions': { title: 'Computer Course Admission | Zahid Computer Education', description: 'Enquire about admission to five computer courses at Zahid Computer Education in Sitamarhi. Review your course enquiry in WhatsApp before you choose to send it.' },
+  '/contact': { title: 'Contact & Directions | Zahid Computer Education, Sitamarhi', description: 'Call, email or message Zahid Computer Education and get directions to Zahid Market in Gausnagar, Runnisaidpur, Sitamarhi, Bihar 843117, India for details.' },
+  '/404': { title: 'Page not found | Zahid Computer Education', description: 'Page not found. Browse courses, compare fees, view institute photos, or contact Zahid Computer Education in Gausnagar, Runnisaidpur, Sitamarhi, Bihar.' },
 };
 
 function Seo({ path }: { path: string }) {
@@ -55,9 +56,12 @@ function Seo({ path }: { path: string }) {
     setMeta('meta[property="og:title"]', 'content', meta.title);
     setMeta('meta[property="og:description"]', 'content', meta.description);
     setMeta('meta[property="og:type"]', 'content', 'website');
-    setMeta('meta[property="og:url"]', 'content', window.location.href);
+    setMeta('meta[property="og:url"]', 'content', `${window.location.origin}${path}`);
     setMeta('meta[name="twitter:title"]', 'content', meta.title);
     setMeta('meta[name="twitter:description"]', 'content', meta.description);
+    setMeta('meta[name="twitter:card"]', 'content', 'summary_large_image');
+    setMeta('meta[property="og:image"]', 'content', new URL(heroLab, window.location.origin).href);
+    setMeta('meta[name="twitter:image"]', 'content', new URL(heroLab, window.location.origin).href);
     let canonical = document.head.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canonical) { canonical = document.createElement('link'); canonical.rel = 'canonical'; document.head.appendChild(canonical); }
     canonical.href = `${window.location.origin}${path}`;
@@ -168,7 +172,7 @@ function Home() {
           {[gallery[0], gallery[2], gallery[4]].map((photo) => <Link key={photo.label} href="/gallery" aria-label={`View gallery: ${photo.label}`}><img src={photo.src} className="photo" width={photo.width} height={photo.height} alt={photo.label} loading="lazy" /></Link>)}
         </div>
       </section>
-      <section className="director"><div className="container-site director-quote"><span className="eyebrow">A note from the director</span><blockquote>“At Zahid Computer Education, our aim is to make practical computer learning approachable and affordable for our local community.”</blockquote><span className="pending">Awaiting director approval</span><p style={{ marginBottom: 0, color: '#576071', fontWeight: 700 }}>Md. Zahid · Director</p></div></section>
+      <section className="director"><div className="container-site director-quote"><span className="eyebrow">A message from the director</span><blockquote>“{DIRECTOR_MESSAGE}”</blockquote><p style={{ marginBottom: 0, color: '#576071', fontWeight: 700 }}>Md. Zahid · Director</p></div></section>
       <section className="cta-band"><div className="container-site cta-row"><div className="cta-copy"><h2>Ready to Start Your Computer Learning Journey?</h2><p>Choose your course and enquire about admission today.</p></div><div className="cta-actions"><a href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hello Zahid Computer Education, I would like to enquire about admission.')}`} className="btn btn-gold" target="_blank" rel="noopener noreferrer"><FaWhatsapp className="whatsapp-inline-icon" aria-hidden="true" /> Enquire on WhatsApp</a><a href="tel:+919852556719" className="btn btn-light-outline">Call Now <Phone size={17} /></a></div></div></section>
     </main>
   </>;
@@ -187,7 +191,7 @@ function About() {
       </div>
     </section>
     <section className="section-pad" style={{ background: '#efecdf' }}><div className="container-site split"><img className="photo" src={exteriorThree} width="1024" height="576" alt="Building and street frontage around Zahid Market in Gausnagar" loading="lazy" /><div className="split-copy"><span className="eyebrow">Learning with clarity</span><h2>A simple, practical approach</h2><p>We want learners to have clear information before they begin: a course to explore, a duration to discuss, and a fee structure they can understand.</p><p>Course descriptions on this site are general introductions. Any detailed syllabus topics are provisional and should be confirmed with the institute.</p></div></div></section>
-    <section className="director"><div className="container-site director-quote"><span className="eyebrow">From the director</span><blockquote>“We want learners in our community to have a welcoming place to start building practical computer skills.”</blockquote><span className="pending">Awaiting director approval</span><p style={{ color: '#576071', fontWeight: 700 }}>Md. Zahid · Director</p></div></section>
+    <section className="director"><div className="container-site director-quote"><span className="eyebrow">A message from the director</span><blockquote>“{DIRECTOR_MESSAGE}”</blockquote><p style={{ color: '#576071', fontWeight: 700 }}>Md. Zahid · Director</p></div></section>
     <section className="cta-band"><div className="container-site cta-row"><h2>Come by Zahid Market or send a course enquiry.</h2><Link className="btn btn-navy" href="/contact">Contact the institute <ArrowRight size={16} /></Link></div></section>
   </main></>;
 }

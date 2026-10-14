@@ -1,0 +1,1 @@
+- [Approved director statement](director-message-approval.md) — Keep the director’s approved statement consistent across public pages.
