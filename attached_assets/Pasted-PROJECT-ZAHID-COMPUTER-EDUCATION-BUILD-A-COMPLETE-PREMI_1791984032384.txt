@@ -1,0 +1,819 @@
+PROJECT: ZAHID COMPUTER EDUCATION
+BUILD A COMPLETE, PREMIUM, PRODUCTION-READY WEBSITE
+
+ROLE:
+Act as an expert frontend developer, senior UI/UX designer, SEO specialist, and web performance engineer.
+
+Build a beautiful, modern, fully responsive, professional website for Zahid Computer Education, a computer training institute in Gausnagar, Runnisaidpur, Sitamarhi, Bihar.
+
+This must be a complete working website, not a mockup.
+
+IMPORTANT:
+Do not create a generic educational website template. Create a distinctive, polished website that looks professionally designed by a premium web development agency.
+
+==================================================
+1. OFFICIAL INSTITUTE DETAILS
+==================================================
+
+Institute Name: ZAHID COMPUTER EDUCATION
+
+Affiliated With: Drishti Computer Education
+
+Director: Md. Zahid
+
+Phone/WhatsApp: +91 9852556719
+
+Email: mdzahid6@gmail.com
+
+Address:
+Zahid Market, Gausnagar,
+Runnisaidpur, Sitamarhi,
+Bihar – 843117, India.
+
+Monthly Course Fee: ₹500
+
+One-Time Registration Fee: ₹200
+
+IMPORTANT BRANDING RULE:
+Zahid Computer Education is the primary institute name.
+
+Display it prominently at the top.
+
+Underneath, display:
+"Affiliated with Drishti Computer Education"
+
+Use the Drishti logo from the uploaded banner.
+
+Do not make Drishti more prominent than Zahid.
+
+==================================================
+2. TECHNOLOGY STACK
+==================================================
+
+Use:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- Lucide React icons
+- Modern CSS animations
+
+Build a clean, reusable component architecture.
+
+No database is required.
+
+No Firebase, Supabase, or paid backend.
+
+No authentication system.
+
+No student portal.
+
+The website must be deployable on affordable static hosting.
+
+==================================================
+3. DESIGN DIRECTION
+==================================================
+
+Create a premium educational website.
+
+Visual inspiration:
+Modern educational academies, premium training institutes, and professionally designed institutional websites.
+
+DESIGN CHARACTERISTICS:
+
+- Elegant navy-blue and golden-yellow branding
+- Clean white backgrounds
+- Premium typography
+- Beautifully spaced sections
+- Authentic institute photography
+- Smooth scrolling
+- Subtle entrance animations
+- Interactive course cards
+- Modern navigation
+- Professional buttons
+- Sophisticated footer
+- Responsive photo galleries
+- Excellent mobile layouts
+
+COLOR PALETTE:
+
+Primary Navy: #102A43
+Dark Navy: #071D30
+Golden Yellow: #F5B700
+Accent Cyan: #00A6C8
+White: #FFFFFF
+Light Background: #F8FAFC
+Text: #172B4D
+
+TYPOGRAPHY:
+
+Headings: Plus Jakarta Sans
+Body: Inter
+
+Use Noto Sans Devanagari if Hindi text is needed.
+
+Avoid excessive gradients, oversized icons, unnecessary shadows, and generic AI-looking designs.
+
+Make the website visually distinctive but professional.
+
+==================================================
+4. AUTHENTIC PHOTOGRAPHS
+==================================================
+
+I have uploaded authentic photographs of the institute.
+
+They include:
+
+1. Computer lab photograph
+2. Classroom activity photograph
+3. Another classroom activity photograph
+4. Institute exterior photograph
+5. Second institute exterior photograph
+6. Original institute banner
+7. Wide building exterior photograph
+
+IMPORTANT:
+
+Use these actual photographs.
+
+Do not use random stock images.
+
+Do not generate fake institute photographs.
+
+Optimize the uploaded photographs for website use.
+
+Improve brightness, contrast, cropping, and visual consistency where appropriate.
+
+The computer lab photograph is relatively dark. Correct its exposure and color balance without changing the actual equipment or surroundings.
+
+Use the computer lab photograph in the homepage hero section.
+
+Use the institute exterior photographs in About and Contact sections.
+
+Use classroom photographs in the Activities and Gallery sections.
+
+Use the original banner as a branding reference.
+
+Do not stretch the banner across the homepage.
+
+Preserve the authenticity of all photographs.
+
+==================================================
+5. WEBSITE PAGES
+==================================================
+
+Create the following pages:
+
+1. Home
+2. About Us
+3. Courses
+4. Gallery
+5. Admissions
+6. Contact Us
+
+Include a custom 404 page.
+
+All navigation links must work correctly.
+
+==================================================
+6. HOMEPAGE
+==================================================
+
+Build a visually impressive homepage.
+
+SECTION A: TOP INFORMATION BAR
+
+Display:
+
+Location:
+Gausnagar, Runnisaidpur, Sitamarhi
+
+Phone:
++91 9852556719
+
+Email:
+mdzahid6@gmail.com
+
+SECTION B: NAVIGATION
+
+Display:
+
+ZAHID COMPUTER EDUCATION
+
+Below:
+Affiliated with Drishti Computer Education
+
+Navigation:
+
+Home
+About
+Courses
+Gallery
+Admissions
+Contact
+
+Include a golden-yellow "Enquire Now" button.
+
+Create a fully responsive mobile menu.
+
+SECTION C: HERO
+
+Use the authentic computer lab photograph.
+
+Headline:
+
+"Build Your Digital Future with Zahid Computer Education"
+
+Subheading:
+
+"Practical Computer Training at Affordable Fees in Runnisaidpur, Sitamarhi."
+
+Highlight:
+
+"Computer Courses at Just ₹500/Month"
+
+Below:
+
+"One-Time Registration Fee: ₹200"
+
+Buttons:
+
+"Explore Courses"
+"Enquire on WhatsApp"
+
+Use an elegant split layout on desktop.
+
+Text on the left.
+Photograph on the right.
+
+On mobile, stack content vertically.
+
+SECTION D: HIGHLIGHTS
+
+Create four attractive information cards:
+
+₹500/Month
+Affordable Computer Education
+
+5 Courses
+Computer Training Programs
+
+1–12 Months
+Flexible Course Durations
+
+Practical Learning
+Computer-Based Training
+
+SECTION E: ABOUT PREVIEW
+
+Heading:
+
+"Welcome to Zahid Computer Education"
+
+Describe the institute using accurate information.
+
+Display an authentic exterior photograph.
+
+Include a "Learn More" button.
+
+SECTION F: COURSES
+
+Display five course cards.
+
+Each card must show:
+
+Course name
+Description
+Duration
+Monthly fee
+Registration fee
+Total fee
+Enquiry button
+
+SECTION G: WHY CHOOSE US
+
+Highlight:
+
+Affordable monthly tuition
+Practical computer learning
+Multiple course options
+Local and accessible institute
+Flexible course durations
+
+Do not invent achievements, awards, placement guarantees, or student statistics.
+
+SECTION H: PHOTO GALLERY
+
+Create a beautiful preview gallery using authentic photographs.
+
+Include a "View Full Gallery" button.
+
+SECTION I: DIRECTOR MESSAGE
+
+Heading:
+
+"A Message from Our Director"
+
+Director:
+Md. Zahid
+
+Use a professionally written draft message emphasizing affordable, accessible, practical computer education.
+
+Mark the message as awaiting director approval before publication.
+
+Do not create a fake director photograph.
+
+SECTION J: ADMISSION CTA
+
+Create an attractive navy-blue section.
+
+Headline:
+
+"Ready to Start Your Computer Learning Journey?"
+
+Supporting text:
+
+"Choose your course and enquire about admission today."
+
+Buttons:
+
+"Enquire on WhatsApp"
+"Call Now"
+
+SECTION K: FOOTER
+
+Display:
+
+Institute name
+Drishti affiliation
+Quick links
+Courses
+Address
+Phone
+Email
+WhatsApp
+
+Use a professional multi-column layout.
+
+==================================================
+7. OFFICIAL COURSE DETAILS
+==================================================
+
+There are exactly FIVE courses.
+
+COURSE 1:
+
+ADCA
+Advanced Diploma in Computer Applications
+
+Duration: 12 Months
+Monthly Fee: ₹500
+Registration: ₹200
+Total Fee: ₹6,200
+
+COURSE 2:
+
+DCA
+Diploma in Computer Applications
+
+Duration: 6 Months
+Monthly Fee: ₹500
+Registration: ₹200
+Total Fee: ₹3,200
+
+COURSE 3:
+
+TALLY
+Tally Accounting Course
+
+Duration: 6 Months
+Monthly Fee: ₹500
+Registration: ₹200
+Total Fee: ₹3,200
+
+COURSE 4:
+
+TYPING
+Computer Typing Course
+
+Duration: 1–3 Months
+Monthly Fee: ₹500
+Registration: ₹200
+Total Fee: ₹700–₹1,700
+
+COURSE 5:
+
+BASIC COMPUTER
+Basic Computer Training
+
+Duration: 3–6 Months
+Monthly Fee: ₹500
+Registration: ₹200
+Total Fee: ₹1,700–₹3,200
+
+IMPORTANT:
+
+Do not include Stenography.
+
+Display all fees accurately.
+
+Explain that the registration fee is paid only once.
+
+First-month payment is ₹700.
+
+Subsequent monthly tuition is ₹500.
+
+Total fees assume the stated number of months and exclude any unconfirmed additional charges.
+
+Provide meaningful course descriptions.
+
+Suggested syllabus topics must be treated as provisional until approved by the institute.
+
+==================================================
+8. ABOUT PAGE
+==================================================
+
+Create a professional About Us page.
+
+Include:
+
+Institute introduction
+Mission
+Educational approach
+Available courses
+Affordable fees
+Authentic photographs
+Drishti affiliation
+Director's message
+
+Use only verified facts.
+
+Do not invent the institute's founding year.
+
+Do not claim government recognition without verified documentation.
+
+==================================================
+9. COURSES PAGE
+==================================================
+
+Create a detailed Courses page.
+
+Use modern responsive course cards.
+
+Each course should include:
+
+Full name
+Duration
+Monthly fee
+Registration fee
+Total fee
+Course overview
+Proposed learning topics
+Enquiry button
+
+Allow visitors to enquire directly about a selected course.
+
+==================================================
+10. GALLERY PAGE
+==================================================
+
+Create a premium image gallery.
+
+Use authentic uploaded photographs.
+
+Categories:
+
+Computer Lab
+Classroom Activities
+Institute Exterior
+
+Implement:
+
+Responsive grid
+Lightbox
+Image captions
+Smooth hover effects
+Lazy loading
+Keyboard accessibility
+
+Do not add fake photographs.
+
+==================================================
+11. ADMISSION ENQUIRY SYSTEM
+==================================================
+
+Create a working admission enquiry form.
+
+Fields:
+
+Student Name
+Mobile Number
+Interested Course
+Preferred Duration (where applicable)
+Optional Message
+
+Validate all required fields.
+
+When the student clicks "Send Enquiry":
+
+Open WhatsApp with a prefilled message.
+
+WhatsApp Number:
+919852556719
+
+Example message:
+
+Hello Zahid Computer Education,
+
+I am interested in admission.
+
+Name: [Student Name]
+Mobile: [Student Mobile]
+Course: [Selected Course]
+Duration: [Selected Duration]
+
+Monthly Fee: ₹500
+Registration Fee: ₹200
+
+Please share admission details.
+
+Thank you.
+
+Use proper URL encoding.
+
+Do not store student information in a database.
+
+Do not falsely claim that an enquiry has been submitted until the student actually sends the WhatsApp message.
+
+Provide a fallback WhatsApp link.
+
+==================================================
+12. CONTACT PAGE
+==================================================
+
+Display:
+
+Zahid Computer Education
+Zahid Market, Gausnagar,
+Runnisaidpur, Sitamarhi,
+Bihar – 843117
+
+Director: Md. Zahid
+
+Phone:
++91 9852556719
+
+Email:
+mdzahid6@gmail.com
+
+Include:
+
+Click-to-call button
+WhatsApp button
+Email button
+Google Maps directions
+Authentic institute exterior photograph
+
+Use a verified Google Maps place URL if available.
+
+Otherwise, use an address-based Google Maps search link.
+
+==================================================
+13. SEO REQUIREMENTS
+==================================================
+
+Optimize the website for local searches.
+
+Primary keywords:
+
+Computer Institute in Runnisaidpur
+Computer Classes in Sitamarhi
+ADCA Course in Sitamarhi
+DCA Course in Runnisaidpur
+Tally Classes in Sitamarhi
+Basic Computer Course in Runnisaidpur
+Typing Classes in Sitamarhi
+
+Implement:
+
+Unique page titles
+Meta descriptions
+Open Graph metadata
+Canonical URLs
+Semantic HTML
+Structured data
+Sitemap
+Robots.txt
+Proper heading hierarchy
+Descriptive image alt text
+
+Do not invent ratings or reviews.
+
+Ensure metadata works correctly for individual routes.
+
+Use prerendering if necessary.
+
+==================================================
+14. MOBILE RESPONSIVENESS
+==================================================
+
+The website must work beautifully on:
+
+320px
+360px
+375px
+390px
+430px
+768px
+1024px
+1440px
+
+Requirements:
+
+No horizontal scrolling
+No clipped text
+No overlapping cards
+No oversized headings
+No broken navigation
+No awkward image cropping
+No excessive blank spaces
+
+Ensure buttons are touch-friendly.
+
+Add a floating WhatsApp button.
+
+==================================================
+15. PERFORMANCE
+==================================================
+
+Target:
+
+Lighthouse Performance: 90+
+Accessibility: 95+
+Best Practices: 95+
+SEO: 95+
+
+These are targets, not guaranteed results.
+
+Optimize:
+
+Images
+Fonts
+JavaScript
+CSS
+Initial page load
+Lazy loading
+Layout stability
+Mobile performance
+
+Use WebP images where appropriate.
+
+Respect reduced-motion preferences.
+
+==================================================
+16. FEATURES NOT REQUIRED
+==================================================
+
+DO NOT BUILD:
+
+Student Login
+Admin Login
+Teacher Login
+Student Dashboard
+Certificate Generator
+Marksheet Generator
+Online Result System
+Online Examination
+Attendance System
+Online Payment Gateway
+Fee Collection System
+Student Database
+
+The institute already uses separate modules for some student services.
+
+This website is informational and admission-enquiry focused.
+
+==================================================
+17. QUALITY REQUIREMENTS
+==================================================
+
+All buttons must work.
+
+All navigation must work.
+
+All course fees must be correct.
+
+All photographs must load.
+
+All pages must be responsive.
+
+The admission enquiry form must work.
+
+The website must have no TypeScript errors.
+
+The production build must succeed.
+
+Do not leave unfinished placeholder sections.
+
+Do not fabricate institute information.
+
+Do not publish unverified accreditation claims.
+
+==================================================
+18. REPLIT IMPLEMENTATION
+==================================================
+
+Create the complete project inside Replit.
+
+Install only necessary dependencies.
+
+Organize components properly.
+
+Configure the Replit development server.
+
+Make the website accessible through the Replit preview.
+
+Do not stop after generating a homepage mockup.
+
+Implement all six pages and their functionality.
+
+Run the project.
+
+Check for errors.
+
+Fix issues before finishing.
+
+If browser preview and screenshot tools are available, inspect the desktop and mobile layouts.
+
+Ensure the project is ready for production deployment.
+
+==================================================
+19. FINAL DESIGN EXPECTATIONS
+==================================================
+
+The website should look:
+
+Modern
+Premium
+Professional
+Trustworthy
+Educational
+Elegant
+Fast
+Accessible
+Mobile-friendly
+
+Avoid generic AI-generated layouts.
+
+Use authentic institute photographs prominently.
+
+Create strong visual hierarchy.
+
+Maintain consistent spacing.
+
+Use polished typography.
+
+Make the admission enquiry process effortless.
+
+Ensure the website looks excellent on both smartphones and laptops.
+
+==================================================
+20. FINAL EXECUTION INSTRUCTION
+==================================================
+
+Start building the complete Zahid Computer Education website now.
+
+First inspect the uploaded images and available project files.
+
+Then:
+
+1. Initialize the project.
+2. Establish the design system.
+3. Integrate authentic images.
+4. Build the homepage.
+5. Build all remaining pages.
+6. Implement WhatsApp enquiries.
+7. Implement SEO.
+8. Optimize responsiveness.
+9. Run tests.
+10. Prepare for deployment.
+
+Do not ask unnecessary questions.
+
+Make reasonable design decisions independently.
+
+Ask only when an essential missing fact prevents accurate implementation.
+
+Deliver a complete, functional, professional website.
+
+At the end, summarize:
+
+- Completed pages
+- Implemented functionality
+- Testing performed
+- Remaining issues
+- Deployment readiness
+
+BEGIN IMPLEMENTATION.

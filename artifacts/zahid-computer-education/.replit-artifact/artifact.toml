@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Zahid Computer Education"
+description = "A polished, mobile-friendly website for Zahid Computer Education in Gausnagar, Runnisaidpur, Sitamarhi, with course information, authentic institute photos, admissions enquiries via WhatsApp, and contact details."
+version = "1.0.0"
+id = "artifacts/zahid-computer-education"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20813
+
+[services.development]
+run = "pnpm --filter @workspace/zahid-computer-education run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/zahid-computer-education", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/zahid-computer-education/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20813"
+BASE_PATH = "/"
