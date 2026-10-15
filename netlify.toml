@@ -1,0 +1,8 @@
+[build]
+  command = "PORT=3000 BASE_PATH=/ pnpm --filter @workspace/zahid-computer-education run build"
+  publish = "artifacts/zahid-computer-education/dist/public"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
